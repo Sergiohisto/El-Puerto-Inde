@@ -1,0 +1,43 @@
+---
+const navItems = [
+  {
+    title: "Inicio",
+    url: "/",
+  },
+  {
+    title: "Artículos",
+    url: "/articulos",
+  },
+  {
+    title: "Proyectos",
+    url: "/proyectos",
+  },
+  {
+    title: "Autores",
+    url: "/autores",
+  },
+  {
+    title: "contacto",
+    url: "/contacto",
+  },
+];
+---
+
+<nav
+  class="border border-black rounded-full
+px-3 py-4
+flex flex-row items-center
+bg-black/50
+backdrop-blur-2xl"
+>
+  {
+    navItems.map((link) => (
+      <a
+        class="hover:bg-white/10  rounded-full px-5 transition text-xl"
+        href={link.url}
+      >
+        {link.title}
+      </a>
+    ))
+  }
+</nav>
