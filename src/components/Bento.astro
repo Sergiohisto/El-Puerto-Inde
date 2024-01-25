@@ -1,0 +1,23 @@
+---
+import BentoItems from "./BentoItems.astro";
+---
+
+<section
+  class={` w-full max-w-[1400px] 
+    grid grid-cols-10 auto-rows-[35rem] gap-4
+    mx-auto p-20
+`}
+>
+  <BentoItems class="col-span-10 md:col-span-4" title="PRIMER POST" />
+  <BentoItems class="col-span-10 md:col-span-6" title="RESEÑA DE LIBRO" />
+  <BentoItems
+    class="col-span-10 md:col-span-6"
+    title="QUE ES JAVASCRIPT"
+    subtitle="por sergio"
+  />
+  <BentoItems
+    class="col-span-10 md:col-span-4"
+    title="POEMA DE AMOR"
+    subtitle="Prosa libre"
+  />
+</section>
