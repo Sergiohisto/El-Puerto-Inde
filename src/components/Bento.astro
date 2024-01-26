@@ -5,10 +5,19 @@ import BentoItems from "./BentoItems.astro";
 <section
   class={` w-full max-w-[1400px] 
     grid grid-cols-10 auto-rows-[30rem] gap-4
-    mx-auto p-20
+    mx-auto p-6 md:p-12 lg:p-20
 `}
 >
   <BentoItems class="col-span-10 md:col-span-4" title="PRIMER POST">
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full bg-blue-950
+    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+    >
+    
+    </div>
+
     <p slot="content" class="max-w-xl">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas distinctio
       sequi, reiciendis quam provident vitae vero <strong
