@@ -1,11 +1,26 @@
 ---
+import BentoItems from "../components/BentoItems.astro";
 import Layout from "../layouts/Layout.astro";
 const pageTitle = "Artículos";
-const allPosts = await Astro.glob('../pages/posts/*.md');
+const allPosts = await Astro.glob("../pages/posts/*.md");
 ---
 
 <Layout pageTitle={pageTitle}>
-  <ul>
-    {allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
-  </ul>
+  <section
+    class={` w-full max-w-[1400px] 
+  grid grid-cols-10 auto-rows-[30rem] gap-4
+  mx-auto p-6 md:p-12 lg:p-20
+`}
+  >
+    {
+      allPosts.map((post) => (
+        <BentoItems
+          class="col-span-10 md:col-span-4"
+          url={post.url}
+          title={post.frontmatter.title}
+          imgen = {post.frontmatter.imgen}
+        />
+      ))
+    }
+  </section>
 </Layout>
