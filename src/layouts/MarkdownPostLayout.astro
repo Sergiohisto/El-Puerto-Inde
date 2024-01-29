@@ -1,10 +1,11 @@
 ---
 import Layout from "./Layout.astro";
-const { title,author } = Astro.props.frontmatter || Astro.props;
+const { frontmatter } = Astro.props;
 
 ---
 <Layout>
-    <h1>{title}</h1>
-<p>escrito por: autor{author}</p>
+ <h1>{frontmatter.title}</h1>
+<p>escrito por: autor{frontmatter.author}</p>
+<img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
 <slot />
 </Layout>

@@ -1,5 +1,5 @@
 ---
-const { title, url,} = Astro.props;
+const { title, url, description, image } = Astro.props;
 ---
 
 <article
@@ -17,5 +17,7 @@ col-span-5
     class="relative z-20 flex h-full select-none flex-col justify-end gap-1 p-4 text-lg md:p-6"
   >
   <a href={url} class="text-2xl font-bold text-balance mb-4">{title}</a>
+  <p>{description}</p>
   </div>
+  
 </article>
