@@ -1,10 +1,13 @@
 ---
 import Header from "../components/Header.astro";
+// Supports weights 300-700
+import '@fontsource-variable/quicksand';
+
 
 const { pageTitle } = Astro.props;
 ---
 
-<html lang="es">
+<html lang="es" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -12,14 +15,23 @@ const { pageTitle } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
-  <body>
-    <Header />
-    <slot />
+
+  <body class="bg-slate-700  text-white">
+    <mai
+      class="px-5 sm:mx-auto sm:max-w-2xl sm:px-8 lg:px-0 md:max-w-6xl gap-12 mt-4"
+    >
+      <Header />
+      <slot />
+      <script>
+        import "../scripts/menu.js";
+      </script>
+    </mai>
   </body>
 </html>
+
 <style>
-  html {
-    background-color: #141935;
-    color: #fff;
+  body {
+    font-family: 'Quicksand Variable', sans-serif;
+
   }
 </style>
