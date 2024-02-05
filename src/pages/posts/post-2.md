@@ -1,7 +1,8 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: Mi segunda publicación en el blog
 author: Alumno de Astro
-description: "Después de aprender un poco de Astro, ¡no podía parar!"
+description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid itaque veritatis vitae quis totam voluptas amet, blanditiis a debitis nisi suscipit neque sed placeat distinc"
 coverAlt: "Una fotografía de una puesta de sol detrás de una cordillera."
 pubDate: 2022-07-08
 tags: ["astro", "bloguear", "aprender en público", "éxitos", "tags de prueba"]

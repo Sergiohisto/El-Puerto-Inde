@@ -2,8 +2,7 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 // Supports weights 300-700
-import '@fontsource-variable/quicksand';
-
+import "@fontsource-variable/quicksand";
 
 const { pageTitle } = Astro.props;
 ---
@@ -17,8 +16,8 @@ const { pageTitle } = Astro.props;
     <title>{pageTitle}</title>
   </head>
 
-  <body class="bg-gray-900  text-white">
-    <mai
+  <body class="bg-gray-900 text-white">
+    <main
       class="px-5 sm:mx-auto sm:max-w-2xl sm:px-8 lg:px-0 md:max-w-6xl gap-12 mt-4"
     >
       <Header />
@@ -26,14 +25,15 @@ const { pageTitle } = Astro.props;
       <script>
         import "../scripts/menu.js";
       </script>
-    </mai>
-    <Footer />
+    </main>
   </body>
+  <footer>
+    <Footer />
+  </footer>
 </html>
 
 <style>
   body {
-    font-family: 'Quicksand Variable', sans-serif;
-
+    font-family: "Quicksand Variable", sans-serif;
   }
 </style>

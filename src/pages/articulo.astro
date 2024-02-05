@@ -1,6 +1,5 @@
 ---
 import Card from "../components/Card.astro";
-import BentoItems from "../components/BentoItems.astro";
 import Layout from "../layouts/Layout.astro";
 const pageTitle = "Artículos";
 
@@ -8,7 +7,7 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 ---
 
 <Layout pageTitle={pageTitle}>
-  <section class="flex flex-wrap justify-center py-2">
+  <section class="grid grid-cols-1 lg:grid-cols-2 p-8">
     {
       allPosts.map((post) => (
         <Card

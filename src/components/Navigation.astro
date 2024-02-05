@@ -9,10 +9,6 @@ const navItems = [
     url: "/articulo",
   },
   {
-    title: "Proyectos",
-    url: "/proyectos",
-  },
-  {
     title: "Autores",
     url: "/autores",
   },
@@ -23,11 +19,11 @@ const navItems = [
 ];
 ---
 
-<nav>
+<nav >
   {
     navItems.map((link) => (
       <a
-        class=" hover:bg-amber-300 rounded-full  px-5 transition text-xl"
+        class=" hover:text-gray-400 rounded-full  px-5 transition text-xl"
         href={link.url}
       >
         {link.title}
