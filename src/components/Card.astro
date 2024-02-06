@@ -1,5 +1,5 @@
 ---
-const { title, url, description, } = Astro.props;
+const { title, url, description, author } = Astro.props;
 ---
 
 <section class="bg-gray-900 ">
@@ -10,6 +10,7 @@ const { title, url, description, } = Astro.props;
       <h2 class="mb-2 text-2xl font-bold tracking-tight text-white">
         <a href={url}>{title}</a>
       </h2>
+      <p>escrito por: {author}</p>
       <p class="mb-5 font-light text-gray-400">
         {description}
       </p>
