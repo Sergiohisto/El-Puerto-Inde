@@ -5,7 +5,7 @@ const { frontmatter } = Astro.props;
 
 <Layout>
   <main class="pt-8 pb-16 lg:pt-10 lg:pb-24 bg-gray-900">
-    <article class="mx-auto w-full max-w-2xl">
+    <article class="mx-auto w-full max-w-2xl text-justify">
       <header class="mb-4 lg:mb-6">
         <h1
           class="mb-4 text-3xl font-extrabold leading-tight lg:mb-6 lg:text-4xl text-white"
@@ -19,8 +19,8 @@ const { frontmatter } = Astro.props;
             </div>
           </div>
         </address>
-        <figure>
-          <img src={frontmatter.image.url} alt={frontmatter.image.alt} />
+        <figure class="flex   justify-center">
+          <img class=" object-none h-[500px] w-[600px]" src={frontmatter.image.url} alt={frontmatter.image.alt} />
         </figure>
       </header>
       <slot />
