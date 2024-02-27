@@ -1,47 +1,15 @@
-# Astro Starter Kit: Minimal
 
-```sh
-npm create astro@latest -- --template minimal
-```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+# ¿Qué es y para qué es este portal?
+El Puerto Independiente es un portal web de código abierto, que nace como parte del autoaprendizaje en programación de software. El puerto Inde, publicara artículos o textos de interés general, pero por su ya marcadas tendencias casi siempre se va por lo literario, culpa del editor, culpa del programador. .
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Para la creación del contenido en general del Puerto Inde, se han creado dos departamentos: El departamento de la app, que mantiene y actualiza la web app(Lenguaje de programación). Y un segundo que se encarga de la construcción y edición de los textos.
 
-## 🚀 Project Structure
+Esta pagina web fue construida con Astro y bajo la dirección y programación de Sergio Arrieta, así mismo su estilado fue creado con Tailwind.
 
-Inside of your Astro project, you'll see the following folders and files:
+![Captura de Pantalla 2024-02-05 a la(s) 9 21 29 p m](https://github.com/Sergiohisto/El-Puerto-Inde/assets/119264858/d36644e1-e219-4b22-9fa1-3e15eca028f6)
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+![Captura de Pantalla 2024-02-05 a la(s) 9 23 27 p m](https://github.com/Sergiohisto/El-Puerto-Inde/assets/119264858/1bfebae5-c197-4112-90c1-cd3196cfbb0d)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+![Captura de Pantalla 2024-02-05 a la(s) 9 23 06 p m](https://github.com/Sergiohisto/El-Puerto-Inde/assets/119264858/9122fa01-9ec8-4beb-9171-b19f6d57a3a4)
