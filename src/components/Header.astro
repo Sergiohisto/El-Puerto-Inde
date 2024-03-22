@@ -1,8 +1,40 @@
----
-import Navigation from "./Navigation.astro";
-
----
-
-<header class="flex justify-center items-center py-5 w-auto mx-auto  bg-gray-800">
-  <Navigation />
+<header class="sticky top-0 h-[90px] shadow-xl z-30 bg-primary">
+  <div
+    class="container mx-auto flex justify-between h-full items-center text-white"
+  >
+    <a href="/">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="rgba(255,255,255,1)"><path d="M13 21V23H11V21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H9C10.1947 3 11.2671 3.52375 12 4.35418C12.7329 3.52375 13.8053 3 15 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H13ZM20 19V5H15C13.8954 5 13 5.89543 13 7V19H20ZM11 19V7C11 5.89543 10.1046 5 9 5H4V19H11Z"></path></svg>
+    </a>
+    <nav>
+      <div class="cursor-pointer lg:hidden" id="nav_trigger_btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="38"
+          height="38"
+          fill="rgba(255,255,255,1)"
+          ><path d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z"
+          ></path></svg
+        >
+      </div>
+      <ul
+        class="fixed w-full h-0 p-0 text-white overflow-hidden border-t top-[90px] left-0 right-0 flex flex-col gap-4 lg:relative lg:flex-row lg:p-0 lg:top-0 lg:border-none lg:h-full transition-all duration-300 bg-primary items-center"
+        id="nav_menu"
+      >
+        <li><a href="#">Inicio</a></li>
+        <li><a href="/articulos">Artículos</a></li>
+        <li><a href="/autores">Autores</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
+
+<script>
+  import "../scripts/main";
+</script>
+
+<style>
+  .nav-is-open {
+    @apply h-[350px] p-6;
+  }
+</style>
