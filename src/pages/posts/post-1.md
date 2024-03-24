@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: "Apuntes Frios"
+title: "Apuntes Varios"
 pubDate: 2024-02-22
-description: "Apuntes de una aentura en Alemania. Este relato pertenece a una serie de apuntes y notas literarias del autor"
+description: "Apuntes de una aventura en Alemania. Este relato pertenece a una serie de apuntes y notas literarias del autor"
 author: "Ernesto"
 image:
   url: "https://th.bing.com/th/id/OIG4.67ADZHncFNwBIqacm8wb?w=1024&h=1024&rs=1&pid=ImgDetMain"
