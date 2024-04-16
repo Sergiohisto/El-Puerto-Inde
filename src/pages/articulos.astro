@@ -7,7 +7,7 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 ---
 
 <Layout pageTitle={pageTitle}>
-  <section class="grid grid-cols-1 lg:grid-cols-2 p-8">
+  <section class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center">
     {
       allPosts.map((post) => (
         <Card
